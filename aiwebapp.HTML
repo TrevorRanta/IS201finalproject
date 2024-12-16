@@ -51,7 +51,7 @@
 
 <canvas id="gameCanvas" width="800" height="600"></canvas>
 <div class="hoop"></div>
-<div class="score" id="score">Score: 0</div>
+
 
 <script>
   const canvas = document.getElementById('gameCanvas');
@@ -138,10 +138,7 @@
     ballX > hoopX && ballX < hoopX + hoopWidth &&
     ballY - ballRadius <= hoopY && ballY + ballRadius >= hoopY
 ) {
-    // Ball is inside the hoop, so increase the score and reset the ball
-    score += 1;  // This adds 1 to the score
-    scoreElement.textContent = `Score: ${score}`;
-    resetBall();
+   
 }
     }
   }
